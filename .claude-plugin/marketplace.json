@@ -8,7 +8,7 @@
     {
       "name": "feature-workflow",
       "description": "Feature workflow skills: explore, design, execute, and review",
-      "source": "."
+      "source": "./"
     }
   ]
 }
