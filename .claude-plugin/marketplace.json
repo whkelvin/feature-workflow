@@ -1,0 +1,14 @@
+{
+  "name": "claude-workflow",
+  "description": "Feature workflow plugin for Claude Code",
+  "plugins": [
+    {
+      "name": "feature-workflow",
+      "description": "Feature workflow skills: explore, design, execute, and review",
+      "source": {
+        "type": "path",
+        "path": "."
+      }
+    }
+  ]
+}
