@@ -34,7 +34,7 @@ Save the execution plan to `./feature/<feature-name>/execution-plan.md`:
 # Execution Plan: <Feature Name>
 
 ## Overview
-Brief summary of total tasks, estimated phases, and parallelization opportunities.
+Brief summary of total tasks, estimated phases, and parallelization opportunities. YOU SHOULD ALWAYS PREFER TEAMS INSTEAD OF SUBAGENTS
 
 ## Phase 1: <Phase Name>
 These tasks have no dependencies and can be executed in parallel.
