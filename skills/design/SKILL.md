@@ -63,7 +63,7 @@ When this is done, invoke the frontend-test-writer to write the implmentation-pl
 
 
 ## Working Rules — YOU MUST FOLLOW THESE STRICTLY
-- when asked to spin up agents, always spin them up in team mode instead of subagent mode so that what each agent is doing can be monitored and visualized.
+- when asked to spin up agents, always spin them up in team mode instead of subagent mode even if it's just a team of 1 so that what each agent is doing can be monitored and interrupted.
 - API spec needs to be done before frontend and backend design can start. Backend and Frontend design can be done in parallel.
 - Frontend design should be done sequentially where implementation is designed first, then test case planning, then test implementation plan.
 - Backend design should be done sequentially where implementation is designed first, then test case planning, then test implementation plan.

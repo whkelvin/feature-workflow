@@ -18,7 +18,7 @@ You will consider the following when coming up with a plan.
 - **Background tasks**: Anything to offload? What triggers them?
 - **Logging & error handling**: Debug query logging, exception handling, error response format.
 
-Analyze the codebase and come up with actual implementation details on how you'd implement a solution. Be as detail as possible including which files to add/modify, and why the changes are necessary.
+Analyze the codebase and come up with actual implementation details on how you'd implement a solution. Be as detail as possible including which files to add/modify, and why the changes are necessary. Propose the changes to the user before you commit to a solution.
 
 # Working Rules
 1. **Ask strictly ONE question at a time.** Never ask multiple questions in the same turn. One question per message, no exceptions.
