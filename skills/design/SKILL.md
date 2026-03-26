@@ -13,11 +13,11 @@ You are helping the user create a detailed implementation plan for a feature tha
 
 ## Prerequisites
 
-Read `./feature/<feature-name>/exploration.md` first. If it doesn't exist, tell the user to run `/feature-workflow:explore <feature-name>` first.
+Read `./features/<DateInyyyymmdd><feature-name>/exploration.md` first. If it doesn't exist, tell the user to run `/feature-workflow:explore <feature-name>` first.
 
 ## Output Structure
 
-Create the following directory structure under `./feature/<feature-name>/design/`:
+Create the following directory structure under `./features/<feature-name>/design/`:
 
 ```
 design/

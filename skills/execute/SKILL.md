@@ -13,7 +13,7 @@ You are helping the user plan the execution of a feature that has been fully des
 
 ## Prerequisites
 
-Read all files under `./feature/<feature-name>/design/`. If the design directory doesn't exist or is incomplete, tell the user to run `/feature-workflow:design <feature-name>` first.
+Read all files under `./features/<DateInyyyymmdd><feature-name>/design/`. If the design directory doesn't exist or is incomplete, tell the user to run `/feature-workflow:design <feature-name>` first.
 
 ## Process
 
@@ -61,6 +61,14 @@ These tasks depend on Phase 1 completion.
 - Any warnings, risks, or special considerations
 - Suggested order within parallel phases if any preference exists
 ```
+
+# Once the implementation is done
+- run /simplify skill to improve code that was written 
+- run formatting on all changed files
+- run all linting on all changed files
+- run all tests and make necessary changes
+- invoke agent-browser skill to make sure frontend changes are working as expected -> don't do this in headless mode, I want to see what you are doing.
+- repeat until all tests pass.
 
 ## Working Rules
 

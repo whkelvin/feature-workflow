@@ -13,23 +13,11 @@ You are helping the user review a feature that has been implemented.
 
 ## Prerequisites
 
-Read `./feature/<feature-name>/exploration.md` and all files under `./feature/<feature-name>/design/` to understand what was supposed to be built.
+Read `./features/<DateInyyyymmdd><feature-name>/exploration.md` and all files under `./feature/<DateInyyyymmdd><feature-name>/design/` to understand what was supposed to be built.
 
 ## Review Steps — Execute in order
 
-### Step 1: Run Tests
-- Identify the test commands for this project (look for package.json scripts, Makefile targets, pytest config, etc.).
-- Run all relevant tests.
-- Report results: total passed, failed, skipped.
-- If any tests fail, list each failure with the test name, file, and error message. put them in a file under failed-tests.md and list all tests that failed. For each test failure, investigate why the tests fail and suggest a fix in failed tests.md. If there are multiple failures, do this in a loop where each failure goes through a test -> fail -> fix -> test until pass cycle, tell the user what you are doing as you go.
-
-### Step 2: Run Linting
-- Identify the lint commands for this project.
-- Run all linters.
-- Report results: total warnings, errors.
-- If any lint errors exist, list each with file, line, and message. fix all linting errors.
-
-### Step 3: Code Review
+### Step 1: Code Review
 Perform a comprehensive code review using subagents for key areas, only do this on the changed code
 
 - code-quality-reviewer

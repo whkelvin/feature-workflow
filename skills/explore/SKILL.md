@@ -13,7 +13,7 @@ You are helping the user explore and define a new feature. The goal is to produc
 
 ## Output
 
-Save the exploration document to `./feature/<feature-name>/exploration.md` with the following structure:
+Save the exploration document to `./features/<DateInyyyymmdd>-<feature-name>/exploration.md` with the following structure:
 
 ```markdown
 # Feature: <Feature Name>
