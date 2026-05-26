@@ -1,11 +1,10 @@
 ---
-description: Create an execution plan from the design docs - task breakdown, parallelization, and model assignment
-disable-model-invocation: true
+description: Create an execution plan from the exploration document - task breakdown, parallelization
 ---
 
 # Feature Execution
 
-You are helping the user plan the execution of a feature that has been fully designed.
+You are helping the user plan the execution of a feature that has been fully explored. Prompt the user to execute the plan after the plan is finalized.
 
 ## Arguments
 
@@ -13,18 +12,14 @@ You are helping the user plan the execution of a feature that has been fully des
 
 ## Prerequisites
 
-Read all files under `./features/<DateInyyyymmdd><feature-name>/design/`. If the design directory doesn't exist or is incomplete, tell the user to run `/feature-workflow:design <feature-name>` first.
+Read all files under `./features/<DateInyyyymmdd><feature-name>/`. If the design directory doesn't exist or is incomplete, tell the user to run `/feature-workflow:explore <feature-name>` first.
 
 ## Process
 
-1. **Read all design docs** — frontend, backend, API specs.
+1. **Read exploration document 
 2. **Identify all discrete tasks** — each component, endpoint, migration, test file, etc.
 3. **Map dependencies** — determine which tasks block others (e.g., DB migration before endpoints, endpoints before frontend API calls).
 4. **Group into execution phases** — tasks that can run in parallel go in the same phase; sequential dependencies create new phases.
-5. **Assign model recommendations** — suggest which LLM model tier to use for each task based on complexity:
-   - **Opus**: Complex architectural decisions, multi-file refactors, tricky business logic
-   - **Sonnet**: Straightforward implementations, CRUD endpoints, component creation, tests
-   - **Haiku**: Boilerplate generation, simple config files, repetitive patterns
 
 ## Output
 
@@ -44,8 +39,6 @@ These tasks have no dependencies and can be executed in parallel.
 - **Description**: What needs to be done
 - **Files to create/modify**: List of file paths
 - **Design reference**: Path to the relevant design doc
-- **Recommended model**: Opus | Sonnet | Haiku
-- **Rationale**: Why this model tier
 
 ### Task 1.2: <Task Name>
 ...
@@ -63,12 +56,7 @@ These tasks depend on Phase 1 completion.
 ```
 
 # Once the implementation is done
-- run /simplify skill to improve code that was written 
-- run formatting on all changed files
-- run all linting on all changed files
-- run all tests and make necessary changes
-- invoke agent-browser skill to make sure frontend changes are working as expected -> don't do this in headless mode, I want to see what you are doing.
-- repeat until all tests pass.
+- make sure to commit reasonable chunks of changes so that reviewing is easy.
 
 ## Working Rules
 
@@ -77,3 +65,4 @@ These tasks depend on Phase 1 completion.
 3. Keep tasks granular enough that each can be a single focused coding session.
 4. Group related tests with their implementation tasks — don't separate them into a different phase unless there's a reason.
 5. ask the user if they want to execute the plan
+6. ALWAYS USE OPUS 4.6 when spawing sub agents.

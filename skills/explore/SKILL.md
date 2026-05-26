@@ -1,6 +1,5 @@
 ---
 description: Start or continue feature exploration - define the problem, users, use cases, and UI mockups
-disable-model-invocation: true
 ---
 
 # Feature Exploration
