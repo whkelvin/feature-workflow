@@ -20,3 +20,7 @@ description: work on a github issue from start to finish.
 3. Issue status set to 'Ready For Review'
 4. Worktree cleaned locally
 5. PR ready for merging and all CI have passed
+
+# IMPORTANT
+- use /goal to make sure the acceptance criterias are met
+- if you run into anything that requires a human's attention, send a message via slack to remind the user there is something waiting for review before asking the question in the session.

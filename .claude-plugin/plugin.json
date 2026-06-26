@@ -1,5 +1,5 @@
 {
   "name": "feature-workflow",
   "description": "Feature workflow skills: explore, execute and slash gh tickets. Run e2e agent in a loop with agentic loop",
-  "version": "1.0.9"
+  "version": "1.0.10"
 }
